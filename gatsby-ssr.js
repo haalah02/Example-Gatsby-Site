@@ -8,13 +8,5 @@
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
 exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` });
-  
-  setHeadComponents([
-    <script
-      key="cookieyes-script"
-      type="text/javascript"
-      src="https://cdn-cookieyes.com/client_data/your-unique-id.js"
-    />,
-  ]);
+  setHtmlAttributes({ lang: `en` })
 }
